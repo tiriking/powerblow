@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    &_lv1 {
+        font-size: 4em;
+        font-weight: 900;
+    }
+    &_lv2 {
+        font-size: 1.8em;
+        font-weight: 900;
+    }
+}
+
+
+.top-wrapper {
+    height: 650px;
+    width: 100%;
+    background-image: url(../img/cafe-image.jpg);
+    background-size: cover;
+    color: #fff;
+    .top-logo {
+        height: 240px;
+        width: 240px;
+        background: #343A40;
+        border: 1px solid #343A40;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-header {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        p {
+            margin-top: 1em;
+            line-height: 2em;
+        }
+    }
+}
+
+.info-wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #a9a9a9;
+    height: 1220px;
+    width: 100%;
+    color: #fff;
+    padding-top: 100px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: -60px;
+        left: 0;
+        background: linear-gradient(45deg, #a9a9a9 50%, transparent 0),linear-gradient(-45deg, #a9a9a9 50%, transparent 0);
+        background-size: 60px 60px;
+        height: 60px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 1220px;
+        width: 100%;
+        background: linear-gradient(135deg, #a9a9a9 50%, transparent 0),linear-gradient(-135deg, #a9a9a9 50%, transparent 0);
+        background-size: 60px 60px;
+        height: 60px;
+    }
+    .info-item {
+        display: flex;
+        .info-left {
+            width: 50%;
+            padding-right: 1em;
+            p {
+                padding-top: 1em;
+                line-height: 1.5em;
+            }
+            .info-left-image {
+                display: flex;
+                margin-top: 1em;
+                img {
+                    width: 50%;
+                }
+                .info-left-image_1 {
+                    padding-right: 1em;
+                }
+            }
+        }
+        .info-right {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+            p {
+                line-height: 1.5em;
+                padding-top: 1em;
+            }
+            .info-right-btn {
+                margin-top: 2em;
+                display: flex;
+                justify-content: center;
+                button {
+                    background-color: #6C757D;
+                    border-radius: 5px;
+                    border: none;
+                    &:hover {
+                        background: darken(#6C757D, 20%);
+                    }
+                    a {
+                        display: block;
+                        padding: .5em .5em;
+                        font-size: 1.5em;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ad-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+.heading,.lead {
+    display: flex;
+    justify-content: center;
+    max-width: 830px;
+    margin: 0 auto;
+    padding: .5em 0 .5em;
+}
+.lead {
+    line-height: 1.5em;
+}
+.menu-wrapper {
+    color: #a9a9a9;
+    padding: 30px 0;
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .menu-items {
+            max-width: 350px;
+            height: 450px;
+            margin-top: 1em;
+            img {
+                width: 350px;
+                height: 250px;
+            }
+            h2,p {
+                line-height: 1.5em;
+                max-width: 310px;
+                margin: 0 auto;
+            }
+            .menu-btn {
+                display: flex;
+                justify-content: center;
+                margin-top: 1.5em;
+                    a {
+                        background: #fff;
+                        border: 1px solid #6C757D;
+                        border-radius: 5px;
+                        color: #6C757D;
+                        display: block;
+                        text-decoration: none;
+                        padding: .5em 1em;
+                        font-size: 1em;
+                        &:hover {
+                            background: #6C757D;
+                            color: #fff;
+                        }
+                }
+            }
+        }
+    }
+}
+
+.gallery-wrapper {
+    background-color: #a9a9a9;
+    color: #fff;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: -60px;
+        left: 0;
+        background: linear-gradient(45deg, #a9a9a9 50%, transparent 0),linear-gradient(-45deg, #a9a9a9 50%, transparent 0);
+        background-size: 60px 60px;
+        height: 60px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        background-position: left bottom;
+        width: 100%;
+        background: linear-gradient(135deg, #a9a9a9 50%, transparent 0),linear-gradient(-135deg, #a9a9a9 50%, transparent 0);
+        background-size: 60px 60px;
+        height: 60px;
+    }
+    .gallery-item {
+        padding-top: 100px;
+        display: flex;
+        .gallery-info {
+            padding: 1em;
+            .gallery-header {
+                padding-bottom: 1.5em;
+            }
+            .gallery-text {
+                line-height: 1.5em;
+            }
+        }
+        
+    }
+    .flex-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.accsess-wrapper{
+    color: #a9a9a9;
+}
+
+.news-wrapper {
+    color: #a9a9a9;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .news-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 50%;
+            .news-header h1 {
+                font-size: 3em;
+                font-weight: 900;
+                padding-bottom: .5em;
+            }
+            .news-item {
+                display: flex;
+                margin-bottom: 1.5em;
+                .news-image {
+                    margin-right: 1em;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+                .news-info {
+                    max-width: 50%;
+                    line-height: 1.5em;
+                    .news-info-header {
+                        padding-bottom: 1em;
+                    }
+                }
+            }
+        }
+        .contact {
+            max-width: 40%;
+            background: #a9a9a9;
+            color: #fff;
+            border-radius: 10px;
+            padding: 1em;
+            .contact-container {
+                border: 2px dashed #fff;
+                border-radius: 10px;
+                height: auto;
+                padding: 1em;
+            }
+            .contact-logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 1px solid #fff;
+                padding-bottom: 2em;
+                img {
+                    padding-bottom: 2em;
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.5em;
+                }
+            }
+            .contact-info {
+                padding: 1em 0;
+                font-weight: 900;
+                font-size: 1.3em;
+                border-bottom: 1px solid #fff;
+                line-height: 1.5em;
+            }
+            .contact-openingHours {
+                font-size: 1.5em;
+                font-weight: 900;
+                padding-top: 1em;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
